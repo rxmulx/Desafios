@@ -18,9 +18,9 @@ function createFireDataStructure(){
 }
 
 function calculateFirePropagation(){
-    for(let column = 0; column < fireWidth; column++ ){
-        for (let row = 0; row < fireHeight; row++){
-            const pixelIndex = column + (fireWidth * row )
+    for(let column = 0; column < firewidth; column++ ){
+        for (let row = 0; row < fireheight; row++){
+            const pixelIndex = column + (firewidth * row )
 
             updateFireIntesityPerPixel(pixelIndex)
         }
@@ -28,14 +28,15 @@ function calculateFirePropagation(){
     renderFire()
 }
 function updateFireIntesityPerPixel(cureentPixelIndex) {
-    const belowPixelIndex = currentPixelIndex + fireWidth
+    const belowPixelIndex = currentPixelIndex + firewidth
     
-    if(belowPixelIndex = currentPixelIndex + fireHeight) {
+    if(belowPixelIndex = currentPixelIndex + fireheight) {
         return
     }
     const decay = 1
     const belowPixelFireIntesity = firePixelsArray[belowPixelIndex]
-    const newFireIntesity = belowPixelFireIntesity - decay
+    const newFireIntesity
+    belowPixelFireIntesity - decay >= 0 ? belowPixelFireIntesity - decay : 0
 
     firePixelsArray[currentPixelIndex] = newFireIntesity
 }
