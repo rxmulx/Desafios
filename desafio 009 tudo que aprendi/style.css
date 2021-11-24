@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(0, 0, 0, 0.418);
+    font-family: Arial, Helvetica, sans-serif;
+    text-justify: auto;
+}
+
+h1{
+    text-align: center;
+    color: #D9D384;
+}
+
+.container__img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+p{
+    color: #bfb76f;
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+@charset  "UTF-8";
+
+body{
+    background-color: black;
+}
+nav#menu{
+    color: white;
+}
+img#ghost{
+    position: absolute;
+    left: 40%;
+}
