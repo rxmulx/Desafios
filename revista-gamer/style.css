@@ -4,7 +4,7 @@ body{
     background-color: beige;
 }
 div#interface{
-
+    width: 1000px;
 }
 header{
 
@@ -14,17 +14,50 @@ h1{
 }
 nav{
     background-color: #003edbc2;
-    width: 800px;
+    width: 849px;
     color: white;
 }
 img#ps{
     display: block;
     position: absolute;
-    left: 279px;
+    left: 355px;
+    width: 495px;
+    top: 159px;
+}
+img#control{
+    height: 260px;
 }
 section#corpo{
     display: block;
-    
+    border-right: 1px solid #606060;
+    border-top: 1px solid #606060;
+    border-bottom: 1px solid #606060;
+    width: 848px;
+}
+#corpo p{
+    width: 330px;
+    margin-right: 0px;
+}
+p#txt2 {
+    position: absolute;
+    right: 1003px;
+    text-align: justify;
+    top: 505px;
+    width: 375px;
+    font-size: 14px;
+}
+p#txt3{
+    position: absolute;
+    right: 733px;
+    top: 507px;
+    width: 263px;
+    font-size: 15px;
+}
+
+p#dsdops3{
+    position: absolute;
+    right: 900px;
+    bottom: 297px;
 }
 aside{
 
