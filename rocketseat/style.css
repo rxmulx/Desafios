@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+
+}
+h1{
+    font-style: bolder;
+}
+h2{
+    font-style: bolder;
+}
+
+body{
+    background-color: rgb(75, 75, 223);
+    text-align: center;
+}
+main{
+    max-width: 900px;
+    min-width: 490px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 10px rgb(43, 43, 43);
+    margin: auto;
+}
+img{
+    margin: auto;
+    border-radius: 4px;
+}
+ul{
+    text-align: left;
+    font-size: 1em;
+}
