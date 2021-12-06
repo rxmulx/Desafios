@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap');
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+    --font-family:'Spartan',Work Sans;
+  }
+  body{
+      background-color: var(--body-bg-color);
+  }
+  p{
+      color: var(--text-color);
+      font-size: 1em;
+
+  }
+  p#txt{
+      color: var(--form-color);
+      font-size: 1em;
+  }
+  p#padding{
+      padding-top: 20px;
+  }
+h2{
+    font-family: 'Spartan',Work Sans;
+    font-weight: 700px;
+    color: var(--title-color);
+}
+  img#logo{
+    width: 500px;
+    padding-bottom: 69px;
+  }
+  img#news{
+    width: 1036px;
+    display: block;
+    position: absolute;
+    left: 35%;
+    top: 8%;
+
+  }
