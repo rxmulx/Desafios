@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coming soon</title>
+</head>
+<script>
+		
+    function relogio(){
+        var data = new Date();
+        var hor = data.getHours();
+        var min = data.getMinutes();
+        var seg = data.getSeconds();
+        
+        if(hor < 10){
+            hor = "0" + hor;
+        }
+        if(min < 10){
+            min = "0" + min;
+        }
+        if(seg < 10){
+            seg = "0" + seg;
+        }
+        
+        var horas = hor + ":" + min + ":" + seg;
+        
+        document.getElementById("rel").value=horas;
+    }
+
+    var timer=setInterval(relogio,1000);
+
+</script>
+<body>
+    
+    <main>
+        <h1>Ready to launch in...</h1>
+    </main>
+
+    <img class="foguete" src="imagens/rocket.svg">
+    <img class="top-image" src="imagens/top-image.svg" >
+    <img class="bottom-image" src="imagens/bottom-image.svg" >
+
+    <h2>Inscreva-se para saber mais sobre o lançamento</h2>
+
+    <button>Inscreva-se</button>
+
+    <p id="dia" >Dias</p>
+    <p id="Hr" >Horas</p>
+    <p id="Min" >Minutos</p>
+    <p id="Seg" >Segundos</p>
+   
+    <input type="datetime" id="rel">
+</body>
+</html>
