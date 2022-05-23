@@ -1,0 +1,225 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+body {
+    display: flex;
+    margin: 0%;
+    background: var(--background);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+main {
+    margin-top: 63px;
+    max-width: calc(100% - 720px);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: var(--form-background);
+    padding: 55px 119px ;
+    border-radius: 4px;
+}
+
+div.txt-icon {
+    display: flex;
+    align-items: center;
+}
+
+img.log-in-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+div.txt-icon h2 { 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--text-title);
+    margin: 0px;
+}
+
+div.texto p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-base);
+}
+
+div.email {
+    color: var(--text-base);
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Poppins';
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+img.mail-icon {
+    position: absolute;
+    bottom: 14px;
+    left: 6px;
+}
+
+img.mail-icon-focus {
+    position: absolute;
+    bottom: 14px;
+    left: 6px;
+}
+
+div.email input {
+    color: #A9AFB9;
+    width: 355px;
+    padding-left: 29px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid #868686;
+    background: transparent;
+}
+
+input.retangulo:hover {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+    border-radius: 4px;
+}
+
+img.eyes {
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+}
+
+img.mailfocus {
+    width: 20px;
+}
+
+div.senha {
+    color: var(--text-base);
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Poppins';
+}
+
+img.lock {
+    position:absolute;
+    bottom: 15px;
+    left: 5px;
+}
+
+div.senha input {
+    border: 1px solid #868686;
+    border-radius: 4px;
+    background: transparent;
+    padding-left: 29px;
+    width: 355px;
+    height: 44px;
+}
+
+div.checkbox {
+    display: flex;
+    align-items: center;                                         
+}
+
+input.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+input.box::before {
+    background-color: var(--form-background);
+    width: 20px;
+    border: 1px solid #868686;
+    position: absolute;
+    content: "";
+    height: 20px;
+    border-radius: 4px;
+}
+
+input.box:checked::after {
+    content:"";
+    background-color: var(--primary-color);
+    position: absolute;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: 19px 19px ;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M14.6667 1L5.50004 10.1667L1.33337 6' stroke='%23473404' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+p.lembre-se {
+    color: #A9AFB9;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+p.esq-senha {
+    color: var(--primary-color);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 110px;
+}
+
+div.input-bt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input.botao {
+    color: #473404;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    background: var(--primary-color);
+    padding: 12px 155px;
+}
+
+p.registre-se {
+    color: var(--primary-color);
+    font-family: normal;
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 14px;
+}
+
+img.img {
+    max-width: 100%;
+}
