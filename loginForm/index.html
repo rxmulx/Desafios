@@ -4,59 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <title>Login Form CSS</title>
 </head>
 <body>
-    <header>
-        <img src="imgs/logo.svg" alt="camp.in">
+    <header class="header" >
+        <img class="header__logo" src="imgs/logo.svg" alt="camp.in">
     </header>
-    <main>
-        <form class="centro" >
+    <main class="main" >
+        <form class="form-login" >
 
-            <div class="texto" >
-                <div class="txt-icon" >
-                    <img class="log-in-img" src="imgs/log-in.svg" alt="log-in" srcset="">
+            <div class="form-login__header" >
+                <div class="form-login__header__text-and-icon"  >
+                    <img class="form-login__header__text-and-icon__log-in-img" src="imgs/log-in.svg" alt="log-in">
                     <h2>Faça seu login</h2>
                 </div>
-                <p>entre com suas informações de cadastro.</p>
+                <p>Entre com suas informações de cadastro.</p>
             </div>
 
-            <div class="email" >
+            <div class=" form-login__field-email">
                 <label>
-                    Email
-                    <img src="imgs/mail-focus.svg" class="mail-icon-focus" width="20px" height="20px">
-                    <input  class="retangulo" type="text" src="imgs/mail-focus.svg" placeholder="Digite seu email">
+                    E-mail
+                    <img src="imgs/mail-focus.svg" class="form-login__field-email__mail-focus " width="20px" height="20px">
+                    <input class="form-login__field-email__input" type="text"placeholder="Digite seu e-mail">
                 </label>
             </div>
 
-            <div class="senha" >
+            <div class="form-login__field-password" >
                 <label >
                     Senha
-                    <img src="imgs/lock-focus.svg" class="lock" width="20px" height="20px" >
-                    <input class="retangulo" type="password" placeholder="Digite sua senha">
-                    <img src="imgs/eye.svg" class="eyes" alt="eye" width="20px" height="20px" >
+                    <img src="imgs/lock-focus.svg" class="form-login__field-password__lock" width="20px" height="20px" >
+                    <input class="form-login__field-password__input" type="password" placeholder="Digite sua senha">
+                    <img src="imgs/eye.svg" class="form-login__field-password__eye" width="20px" height="20px" >
                 </label>
             </div>
 
-            <div class="checkbox" >
-                <input type="checkbox" class="box">
-                <p class="lembre-se" >Lembre-me</p>
-                <p class="esq-senha" >esqueci minha senha</p>
+            <div class="form-login__checkbox" >
+                <input type="checkbox" class="form-login__checkbox__reminder">
+                <p class="form-login__checkbox__remember-if" >Lembre-me</p>
+                <p class="form-login__checkbox__forgot-pass" >Esqueci minha senha</p>
             </div>
 
-            <div class="input-bt" >
-                <input class="botao" type="button" value="Entrar">
-                <p class="registre-se" >Não tem uma conta? Regristre-se</p>
+            <div class="form-login__button" >
+                <input class="form-login__button__input" type="button" value="ENTRAR">
+                <p class="form-login__button__register">Não tem uma conta? <strong>Regristre-se</strong></p>
             </div>
 
         </form>
     </main>
-    <aside>
-        <img class="img" src="imgs/side-image.jpg">
+    <aside class="aside">
+        <img class="img \ aside__img-side" src="imgs/side-image.jpg">
     </aside>
 </body>
 </html>

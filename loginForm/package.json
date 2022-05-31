@@ -1,0 +1,13 @@
+{
+  "name": "loginForm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "scripts": {
+    "dev": "node-sass sass/style.scss dist/css/style.css --watch",
+    "build": "node-sass sass/style.scss dist/css/style.css"
+  }
+}
