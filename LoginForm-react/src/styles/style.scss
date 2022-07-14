@@ -1,0 +1,228 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0%;
+}
+
+@mixin flexCenter{
+        display: flex;
+        margin: 0%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+}
+
+@mixin input-base {
+    border: 1px solid #868686;
+    margin-top: 5px;
+    border-radius: 4px;
+    background: transparent;
+    padding-left: 40px;
+    width: 335px;
+    height: 44px;
+    &:hover {
+        border: 1px solid var(--primary-color);
+        box-shadow: 0px 0px 0px 2px #FFDE88;
+        border-radius: 4px;
+    }
+}
+
+@mixin field-base {
+    color: var(--text-base);
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Poppins';
+}
+
+p {
+    margin: 0;
+}
+
+div#root {
+    @include flexCenter();
+    background: var(--background);
+}
+
+header {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+main {
+    margin-top: 63px;
+    max-width: calc(100% - 720px);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: var(--form-background);
+    padding: 55px 119px ;
+    border-radius: 4px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-login {
+    &__header {
+        p {
+            font-family: 'Roboto';
+            margin-top: 5px;
+            margin-bottom: 27px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--text-base);
+        }
+        &__text-and-icon {
+            display: flex;
+            align-items: center;
+            h2{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: var(--text-title);
+                margin: 0px;
+            }
+            &__log-in-img {
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__field-email {
+        @include field-base();
+        &__mail-focus {
+            position: absolute;
+            bottom: 14px;
+            left: 6px;
+            padding-left: 8px;
+        }
+        &__input {
+            @include input-base();
+        }
+    }
+
+    &__field-password {
+        @include field-base();
+        &__lock {
+            position:absolute;
+            bottom: 15px;
+            left: 5px;
+            padding-left: 9px;
+        }
+        &__input {
+            @include input-base();
+        }
+        &__eye {
+            position: absolute;
+            right: 13px;
+            bottom: 13px;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        &__reminder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            &::before {
+                background-color: var(--form-background);
+                width: 20px;
+                border: 1px solid #868686;
+                position: absolute;
+                content: "";
+                height: 20px;
+                border-radius: 4px;
+            }
+            &:checked::after {
+                content:"";
+                background-color: var(--primary-color);
+                position: absolute;
+                border-radius: 4px;
+                background-repeat: no-repeat;
+                background-size: 19px 19px ;
+                width: 20px;
+                height: 20px;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M14.6667 1L5.50004 10.1667L1.33337 6' stroke='%23473404' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+        }
+        &__remember-if {
+            color: #A9AFB9;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+        &__forgot-pass {
+            color: var(--primary-color);
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            margin-left: 110px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__input {
+            color: #473404;
+            border: 0;
+            width: 379px;
+            font-family: 'Poppins';
+            font-style: normal;
+            margin-bottom: 14px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 27px;
+            background: var(--primary-color);
+            padding: 12px 155px;
+            border-radius: 4px;
+        }
+        &__register {
+            color: var(--primary-color);
+            font-family: normal;
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+
+}
+
+.aside {
+    &__img-side {
+        max-width: 100%;
+    }
+}

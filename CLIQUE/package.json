@@ -1,0 +1,13 @@
+{
+  "name": "CLIQUE",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "scripts": {
+   "watch": "node-sass styles/style.scss dist/style.css --watch",
+   "build": "node-sass styles/style.scss dist/style.css"
+  }
+}
